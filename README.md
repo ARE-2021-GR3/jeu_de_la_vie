@@ -1,1 +1,3 @@
 # jeu_de_la_vie
+
+Conway's Game of Life is a type of cellular automata...
