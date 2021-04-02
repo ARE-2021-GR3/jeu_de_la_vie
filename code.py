@@ -8,12 +8,14 @@ matrice = np.array([[0, 1, 1, 1, 0],
                     [0, 1, 1, 0, 1],
                     [1, 0, 1, 1, 0]])
 
-
-def voisinnage(matrice, el): #matrice : List[List[int]], el : Tuple[int, int], neigh : int
-    """Renvoie une liste d'indices des éléments dans
+def voisinnage(matrice, el): #matrice : List[List[int]], el : Tuple[int, int]
+    """Préconditions : x>1 and y>1
+    
+    Renvoie une liste d'indices des éléments dans
     le voisinage de Moore de l'élément passé en paramètre
     """
     res = []
+    
     
     x = np.shape(matrice)[0]
     y = np.shape(matrice)[1]
@@ -71,21 +73,68 @@ def voisinnage(matrice, el): #matrice : List[List[int]], el : Tuple[int, int], n
         res.append((x-2, y-1))
         #à gauche
         res.append((x-1, y-2))
-    
-    return res
-
 
     #cas 6 (bord haut)
-    elif (yEl == 0):
+    elif (xEl == 0):
         #à gauche
-        res.append(0, yEl-1)
+        res.append((0, yEl-1))
         #à droite
-        res.append(0, yEl+1)
+        res.append((0, yEl+1))
         #en bas
-        
+        for i in range(yEl-1, yEl+2):
+            res.append((xEl+1, i))
         
     #cas 7 (bord gauche)
     elif (yEl == 0):
         #en haut
         res.append((xEl-1, 0))
         res.append((xEl-1, 1))
+        #à droite
+        res.append((xEl, 1))
+        #en bas
+        res.append((xEl+1, 0))
+        res.append((xEl+1, 1))
+    
+    #cas 8 (bord droit)
+    elif (yEl == y-1):
+        #en haut
+        res.append((xEl-1, y-2))
+        res.append((xEl-1, y-1))
+        #à gauche
+        res.append((xEl, y-2))
+        #en bas
+        res.append((xEl+1, y-2))
+        res.append((xEl+1, y-1))
+    
+    #cas 9 (bord bas)
+    elif (xEl == x-1):
+        #en haut
+        for i in range(yEl-1, yEl+2):
+            res.append((xEl-1, i))
+        #à gauche
+        res.append((x-1, yEl-1))
+        #à droite
+        res.append((x-1, yEl+1))
+        
+    return res
+
+
+#Jeu de tests
+#cas 1
+assert(voisinnage(matrice, (2, 2))) == [(1, 1), (1, 2), (1, 3), (2, 1), (2, 3), (3, 1), (3, 2), (3, 3)]
+#cas 2
+assert(voisinnage(matrice, (0, 0))) == [(0, 1), (1, 0), (1, 1)]
+#cas 3
+assert(voisinnage(matrice, (0, 4))) == [(0, 3), (1, 3), (1, 4)]
+#cas 4
+assert(voisinnage(matrice, (4, 0))) == [(3, 0), (3, 1), (4, 1)]
+#cas 5
+assert(voisinnage(matrice, (4, 4))) == [(3, 3), (3, 4), (4, 3)]
+#cas 6
+assert(voisinnage(matrice, (0, 2))) == [(0, 1), (0, 3), (1, 1), (1, 2), (1, 3)]
+#cas 7
+assert(voisinnage(matrice, (2, 0))) == [(1, 0), (1, 1), (2, 1), (3, 0), (3, 1)]
+#cas 8
+assert(voisinnage(matrice, (2, 4))) == [(1, 3), (1, 4), (2, 3), (3, 3), (3, 4)]
+#cas 9
+assert(voisinnage(matrice, (4, 2))) == [(3, 1), (3, 2), (3, 3), (4, 1), (4, 3)]
