@@ -1,5 +1,8 @@
+### Semaine 5
+Nous avons avancé sur le code et nous avons developpé le site du projet.
+
 ### Semaine 4
-Nous avons commencé à coder notre projet et nous avons fini le carnet de bord pur le recherche documentaire.
+Nous avons commencé à coder notre projet et nous avons fini le carnet de bord pour le recherche documentaire.
 
 ### Semaine 3
 Nous avons fait une présentation du projet et nous avons précisé les paramètres du sujet.
