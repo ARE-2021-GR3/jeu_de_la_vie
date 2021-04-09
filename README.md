@@ -4,7 +4,7 @@ Résumé présentant l'objectif...
 ## Conway's Game of Life 
 (english version) 
 
-# Présentation de l'equipe :
+## Présentation de l'equipe :
 
 Simay CELIK
 Dilyara BABANAZAROVA
