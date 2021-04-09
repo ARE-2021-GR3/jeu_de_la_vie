@@ -1,3 +1,8 @@
+
+### Semaine 6
+Nous sommes en train de finir notre code.
+Nous avons developpé le site du projet.
+
 ### Semaine 5
 Nous avons avancé sur le code et nous avons developpé le site du projet.
 
