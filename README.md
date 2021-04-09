@@ -6,13 +6,13 @@ Résumé présentant l'objectif...
 
 ## Présentation de l'equipe :
 
-Simay CELIK,
+Simay CELIK
 
-Dilyara BABANAZAROVA,
+Dilyara BABANAZAROVA
 
-Yanni LEFKI,
+Yanni LEFKI
 
-Alexis DUCOTTET.
+Alexis DUCOTTET
 
 ## Description synthétique du projet
 
