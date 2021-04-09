@@ -6,7 +6,7 @@ Résumé présentant l'objectif...
 
 ## Présentation de l'equipe :
 
-Simay CELIK *\n*
+Simay CELIK "\n"
 Dilyara BABANAZAROVA
 Yanni LEFKI
 Alexis DUCOTTET
