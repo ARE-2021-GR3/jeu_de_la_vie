@@ -1,18 +1,18 @@
-## jeu_de_la_vie
+## Jeu_de_la_vie
 Résumé présentant l'objectif...
 
 ## Conway's Game of Life 
 (english version)
 
 # Présentation de l'equipe :
-Simay CELIK 
-Dilyara BABANAZAROVA
-Yanni LEFKI
-Alexis DUCOTTET
+**Simay CELIK**
+**Dilyara BABANAZAROVA**
+**Yanni LEFKI**
+**Alexis DUCOTTET**
 
 ## Description synthétique du projet
 
-**Problematique :**
+**Problématique :**
 
 **Hypothèse :**
 
