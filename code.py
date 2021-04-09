@@ -8,6 +8,8 @@ matrice = np.array([[0, 1, 1, 1, 0],
                     [0, 1, 1, 0, 1],
                     [1, 0, 1, 1, 0]])
 
+monde = np.random.randint(4, size=(10, 4))
+
 def voisinnage(matrice, el): #matrice : List[List[int]], el : Tuple[int, int]
     """Préconditions : x>1 and y>1
     
