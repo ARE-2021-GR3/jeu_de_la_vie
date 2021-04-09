@@ -2,15 +2,31 @@ import matplotlib.pyplot as plt
 import numpy as np
 import random
 
+#constantes
+PROB_CONT = 0.2
+PROB_DEATH = 0.1
+NB_TURNS_TO_LIFE = 5 #on effectue 5 fois death(), puis on immunise notre cellule
+
+
 matrice = np.array([[0, 1, 1, 1, 0],
                     [1, 0, 1, 0, 0], 
-                    [0, 0, 1, 1, 0],
+                    [0, 0, 2, 1, 0],
                     [0, 1, 1, 0, 1],
                     [1, 0, 1, 1, 0]])
 
-monde = np.random.randint(4, size=(10, 4))
 
-def voisinnage(matrice, el): #matrice : List[List[int]], el : Tuple[int, int]
+# différents états possibles pour yne cellule :
+# 0 - mort
+# 1 - vivant
+# 2 - contaminé
+# 3 - immunisé
+
+
+monde = np.random.randint(4, size=(6, 8))
+print(monde)
+print()
+
+def voisinnage(monde, el): #matrice : List[List[int]], el : Tuple[int, int]
     """Préconditions : x>1 and y>1
     
     Renvoie une liste d'indices des éléments dans
@@ -120,7 +136,26 @@ def voisinnage(matrice, el): #matrice : List[List[int]], el : Tuple[int, int]
         
     return res
 
+def contamination(monde, el, prob_cont):
+    """Préconditions : el appartient à monde et monde[el] == 2; prob_cont >= 0.0 and prob_cont <= 1.0
+    Contamine toutes les cellules en vie autour de notre el avec une proba de pron_cont
+    """
+    
+    for i in voisinnage(monde, el):
+        if (monde[i] == 1 and random.random()<=prob_cont):
+            monde[i] = 2
 
+    return monde
+
+def death(monde, el, prob_death):
+    """Préconditions : el appartient à monde et monde[el] == 2; prob_death >= 0.0 and prob_death <= 1.0
+    Tue une cellule infectée avec une probabilité de prob_death"""
+    if random.random()<=prob_death:
+        monde[el] = 0
+    
+    return monde
+    
+    
 #Jeu de tests
 #cas 1
 assert(voisinnage(matrice, (2, 2))) == [(1, 1), (1, 2), (1, 3), (2, 1), (2, 3), (3, 1), (3, 2), (3, 3)]
@@ -140,3 +175,4 @@ assert(voisinnage(matrice, (2, 0))) == [(1, 0), (1, 1), (2, 1), (3, 0), (3, 1)]
 assert(voisinnage(matrice, (2, 4))) == [(1, 3), (1, 4), (2, 3), (3, 3), (3, 4)]
 #cas 9
 assert(voisinnage(matrice, (4, 2))) == [(3, 1), (3, 2), (3, 3), (4, 1), (4, 3)]
+
