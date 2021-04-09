@@ -2,7 +2,7 @@
 Résumé présentant l'objectif...
 
 ## Conway's Game of Life 
-(english version)
+(english version) 
 
 # Présentation de l'equipe :
 
@@ -24,19 +24,7 @@ Alexis DUCOTTET
 
 
 ## Lien vers page de blog : 
-<a href= "https://github.com/ARE-2021-GR3/jeu_de_la_vie/blob/main/blog.md">  C'est ici ! </a>
+<a href= "https://github.com/ARE-2021-GR3/jeu_de_la_vie/blob/main/blog.md"> Nous avons crée un blog afin de documenter l'avancement du projet.  C'est ici notre blog ! </a>
 
 ## Bibliographie:
 
-
-
-
-
-
-
-
-
-Nous avons crée un blog afin de documenter l'avancement du projet.
-Voici notre blog: https://github.com/ARE-2021-GR3/jeu_de_la_vie/blob/main/blog.md
-
-Conway's Game of Life is a type of cellular automata...
