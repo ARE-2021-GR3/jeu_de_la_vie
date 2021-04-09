@@ -5,10 +5,11 @@ Résumé présentant l'objectif...
 (english version)
 
 # Présentation de l'equipe :
-**Simay CELIK**
-**Dilyara BABANAZAROVA**
-**Yanni LEFKI**
-**Alexis DUCOTTET**
+
+Simay CELIK
+Dilyara BABANAZAROVA
+Yanni LEFKI
+Alexis DUCOTTET
 
 ## Description synthétique du projet
 
@@ -23,7 +24,7 @@ Résumé présentant l'objectif...
 
 
 ## Lien vers page de blog : 
-<a href= "blog.htmd">  C'est ici ! </a>
+<a href= "https://github.com/ARE-2021-GR3/jeu_de_la_vie/blob/main/blog.md">  C'est ici ! </a>
 
 ## Bibliographie:
 
