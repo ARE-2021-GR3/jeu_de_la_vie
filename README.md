@@ -23,8 +23,10 @@ Alexis DUCOTTET
 
 
 
-## Lien vers page de blog : 
-<a href= "https://github.com/ARE-2021-GR3/jeu_de_la_vie/blob/main/blog.md"> Nous avons crée un blog afin de documenter l'avancement du projet.  C'est ici notre blog ! </a>
+## Lien vers page de blog :
+Nous avons crée un blog afin de documenter l'avancement du projet.
+
+<a href= "https://github.com/ARE-2021-GR3/jeu_de_la_vie/blob/main/blog.md">   C'est ici notre blog ! </a>
 
 ## Bibliographie:
 
