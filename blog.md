@@ -1,9 +1,12 @@
 ### Semaine 7
 
+Nous somme en train d'ecrire nos derniers fonctions. On va commencer daans les prochains jours de tester nos fonctions et observer la simulation. 
+
+Nous continions developper notre site du projet.
 
 ### Semaine 6
 
-Nous avance sur notre code. Nous en train d'ecrire une fonction de contamination et de mortalité d'un individu
+Nous avance sur notre code. Nous en train d'ecrire une fonction de contamination et de mortalité d'un individu.
 
 Nous continions developper notre site du projet.
 
