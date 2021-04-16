@@ -17,10 +17,14 @@ Voici notre présentation : https://github.com/ARE-2021-GR3/jeu_de_la_vie/blob/m
 ### Semaine 2
 Précisions sur la problématique et la démarche scientifique.
 Les effets sur la vitesse de la propagation d'un virus: 
--la contagiosité 
+-la contagiosité
+
 -la densité de population 
+
 -les coordonnés du premier infecté 
+
 -regroupement des immunes 
+
 -l'existance des morts et des guerris 
 
 ### Semaine 1
