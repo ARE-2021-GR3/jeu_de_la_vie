@@ -12,7 +12,10 @@ Nous avons commencé à coder notre projet et nous avons fini le carnet de bord 
 ### Semaine 3
 Nous avons fait une présentation du projet et nous avons précisé les paramètres du sujet. 
 
-Voici notre présentation : https://github.com/ARE-2021-GR3/jeu_de_la_vie/blob/main/Jeu_de_la_pandemie.pdf
+Voici notre présentation :
+[Jeu_de_la_pandemie.pdf](https://github.com/ARE-2021-GR3/jeu_de_la_vie/files/6323975/Jeu_de_la_pandemie.pdf)
+
+
 
 ### Semaine 2
 Précisions sur la problématique et la démarche scientifique.
