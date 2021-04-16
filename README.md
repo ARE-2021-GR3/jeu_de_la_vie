@@ -1,5 +1,7 @@
 ## Jeu_de_la_vie
-Résumé présentant l'objectif...
+Notre projet a pour but de manipuler les principes de Jeu de la vie afin de faire une semi-simulation de la propagation d ‘une épidémie au cours du temps. Désormais, nous avons pu observer comment les conditions peuvent faire varier la vitesse de propagation d’un virus et ses effets sur la population lors de la pandémie de Covid-19. C’est pourquoi, avec les modifications sur les règles générales du jeu de la vie, nous pouvons montrer la ressemblance entre ce jeu et la vie réelle. 
+Avant de vous parler de comment faire, nous voulons parler du concept du Jeu de la vie créé par John Horton Conway. Ce simple jeu de plateau a deux différentes types de cellule
+
 
 ## Conway's Game of Life 
 (english version) 
