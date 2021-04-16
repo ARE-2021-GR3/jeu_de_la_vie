@@ -17,6 +17,7 @@ Voici notre présentation : https://github.com/ARE-2021-GR3/jeu_de_la_vie/blob/m
 ### Semaine 2
 Précisions sur la problématique et la démarche scientifique.
 Les effets sur la vitesse de la propagation d'un virus: 
+
 -la contagiosité
 
 -la densité de population 
@@ -28,6 +29,6 @@ Les effets sur la vitesse de la propagation d'un virus:
 -l'existance des morts et des guerris 
 
 ### Semaine 1
-Nous avons choisi le thème du projet.
+Nous avons choisi le thème du projet. Nous avons discuté entre nous
 -Comment le jeu de la vie fonctionne-t-il? 
 
