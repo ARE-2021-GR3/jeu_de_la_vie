@@ -12,7 +12,7 @@ matrice = np.array([[0, 1, 1, 1, 0],
                     [1, 0, 1, 0, 0], 
                     [0, 0, 2, 1, 0],
                     [0, 1, 1, 0, 1],
-                    [1, 0, 1, 1, 0]])
+                    [1, 0, 1, 1, 0]]) 
 
 
 # différents états possibles pour yne cellule :
