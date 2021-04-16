@@ -10,7 +10,9 @@ Nous avons avancé sur le code et nous avons developpé le site du projet.
 Nous avons commencé à coder notre projet et nous avons fini le carnet de bord pour le recherche documentaire.
 
 ### Semaine 3
-Nous avons fait une présentation du projet et nous avons précisé les paramètres du sujet.
+Nous avons fait une présentation du projet et nous avons précisé les paramètres du sujet. 
+
+Voici notre présentation : https://github.com/ARE-2021-GR3/jeu_de_la_vie/blob/main/Jeu_de_la_pandemie.pdf
 
 ### Semaine 2
 Précisions sur la problématique et la démarche scientifique.
