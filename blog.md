@@ -1,13 +1,15 @@
+### Semaine 7
+
 
 ### Semaine 6
 
-Nous avance sur notre code. Nous en train d'ecrire une fonction de contamination et de mortalité d'un individu. 
+Nous avance sur notre code. Nous en train d'ecrire une fonction de contamination et de mortalité d'un individu
 
-Nous avons developpé le site du projet.
+Nous continions developper notre site du projet.
 
 ### Semaine 5
 
-Nous avons avancé sur le code. Nous avons ecrit une fonction voisinage qui nous renvoit les coordonées des voisins de la cellule concernée et nous avons determiné une commande qui aleatoirement cree une matrice.  
+Nous avons avancé sur le code. Nous avons ecrit une fonction voisinage qui nous renvoit les coordonées des voisins de la cellule concernée et une autre fonction  qui aleatoirement cree une matrice.  
 
 Nous avons commencé developper notre site du projet.
 
