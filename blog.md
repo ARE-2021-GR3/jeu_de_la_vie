@@ -1,25 +1,38 @@
 
 ### Semaine 6
-Nous sommes en train de finir notre code.
+
+Nous avance sur notre code. Nous en train d'ecrire une fonction de contamination et de mortalité d'un individu. 
+
 Nous avons developpé le site du projet.
 
 ### Semaine 5
-Nous avons avancé sur le code et nous avons developpé le site du projet.
+
+Nous avons avancé sur le code. Nous avons ecrit une fonction voisinage qui nous renvoit les coordonées des voisins de la cellule concernée et nous avons determiné une commande qui aleatoirement cree une matrice.  
+
+Nous avons commencé developper notre site du projet.
 
 ### Semaine 4
-Nous avons commencé à coder notre projet et nous avons fini le carnet de bord pour le recherche documentaire.
+
+Nous avons determiné nos parametres et nous avons commencé à coder notre projet.
+
+Nous avons fini la recherche documentaire et nous avons remis notre devoir (carnet de bord) pour les bibliothécaires dont on a fait en partagent des travails partie par partie. 
 
 ### Semaine 3
-Nous avons fait une présentation du projet et nous avons précisé les paramètres du sujet. 
 
-Voici notre présentation :
+Nous avons fait une présentation du projet ou nous avons precisé notre thème, notre problématique, nos hypothèses et notre objectif. 
+
+Vous pouvez voir notre présentation ici :
 [Jeu_de_la_pandemie.pdf](https://github.com/ARE-2021-GR3/jeu_de_la_vie/files/6323975/Jeu_de_la_pandemie.pdf)
+
+Nous avons creé notre blog et notre site.
 
 
 
 ### Semaine 2
-Précisions sur la problématique et la démarche scientifique.
-Les effets sur la vitesse de la propagation d'un virus: 
+
+Nous avons précisé sur la problématique et nous continions notre démarche scientifique.
+
+Nous avons determiné les effets sur la vitesse de la propagation d'un virus: 
 
 -la contagiosité
 
@@ -32,6 +45,15 @@ Les effets sur la vitesse de la propagation d'un virus:
 -l'existance des morts et des guerris 
 
 ### Semaine 1
-Nous avons choisi le thème du projet. Nous avons discuté entre nous
--Comment le jeu de la vie fonctionne-t-il? 
+
+Nous avons determiné le thème du notre projet et commencé faire les recherches. Nous avons discuté entre nous:
+
+  -Quel doit être notre problématique?
+  
+  -Comment on peut démontrer la propagation d'une epidemie en s'inspirant du Jeu de la vie?
+  
+  -Quels doivent être nos parametres?
+  
+  
+
 
