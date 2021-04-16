@@ -26,10 +26,15 @@ La vitesse de la propagation d'un virus est liée à sa contagiosité.
 Faire varier les conditions afin d'observer la propagation d'une epidémie au cours du temps à l'aide de jau de la vie.
 
 **Critère(s) d'évaluation :**
+
 -Les coordonnés du premier infecté
+
 -Le nombre de contamination par personne
+
 -Densité de population
+
 -Regroupement des immunes 
+
 -Distanciation sociale
 
 
