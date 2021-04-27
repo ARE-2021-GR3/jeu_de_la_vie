@@ -1,10 +1,14 @@
+import matplotlib.pyplot as plt
 import numpy as np
 import random
+import time
 
 #constantes
 PROB_CONT = 0.2
 PROB_DEATH = 0.1
 NB_TURNS_TO_LIFE = 5 #une cellule va soit mourir, soit survivre NB_TURNS_TO_LIFE tours et devenir immunisée
+TAILLE_MONDE = (100, 100) #tuple qui donne la taille de notre monde
+
 
 matrice = np.array([[0, 1, 1, 1, 0],
                     [1, 0, 1, 0, 0], 
@@ -20,11 +24,14 @@ matrice = np.array([[0, 1, 1, 1, 0],
 # 2 - contamine
 # 3 - immunise
 
-def creation_monde(x, y):
-    monde = np.random.randint(4, size=(x, y))
+np.random.seed(19680801)
+
+
+def creation_monde(taille):
+    monde = np.random.randint(4, size=(taille[0], taille[1]))
     return monde
 
-monde = creation_monde(10, 10)
+monde = creation_monde(TAILLE_MONDE)
 print(monde)
 print()
 
@@ -148,7 +155,7 @@ def contamination(monde, el, prob_cont):
     
     for i in voisinnage(monde, el):
         if random.random()<=prob_cont:
-            liste_cont.append(voisinnage[i])
+            liste_cont.append(i)
 
     return liste_cont
 
@@ -161,30 +168,60 @@ def death(monde, el, prob_death):
         return 0
     
 def tour(monde):
-    
-    x = np.shape(monde)[0]
-    y = np.shape(monde)[1]
-    
-    monde_update = np.zeros(x,y)
-    
-    for i in range(x):
-        for j in range(y):
-            if monde[i][j] == 0:
-                monde_update[i][j] == 0
-            elif monde[i][j] == 3:
-                monde_update[i][j] == 3
-    
-    
-    for i in range(x):
+    """  for i in range(x):
         for j in range(y):
             if monde[i][j] == 2:
                 monde_update[i][j] == 2
                 for k in contamination(monde, (i, j), PROB_CONT):
-                    monde_update[k] = 2
+                    monde_update[k] = 2"""
+    x = np.shape(monde)[0]
+    y = np.shape(monde)[1]
+    
+    monde_update = np.zeros((x,y), dtype = int)
+    
+    
+    # premier parcours pour placer les cellules mortes/immunisées
+    for i in range(x):
+        for j in range(y):
+            if monde[i][j] == 3:
+                monde_update[i][j] = 3
+                
+    # deuxième parcours pour placer les cellules contaminées
+    for i in range(x):
+        for j in range(y):
+            if monde[i][j] == 2:
+                monde_update[i][j] = 2
+                for k in contamination(monde, (i, j), PROB_CONT):
+                    if monde[k] == 1:
+                        monde_update[k] = 2
+    
+    # troisième parcours pour placer les cellules vivantes
+    for i in range(x):
+        for j in range(y):
+            if (monde[i][j] == 1 and monde_update[i][j] == 0):
+                monde_update[i][j] = 1
+    
+    return monde_update
+
+
+for i in range(1, 21):    
+    plt.matshow(monde)
+    monde = tour(monde)
+    plt.title(i)
+    
+    print("Tour", i)
+    plt.pause(0.2)
+    
+
+
+plt.show()
+    
+  
                     
             
     
-    return 
+    
+
 
 
 # liste des contaminés a chaque tour -> pouvoir les immuniser au bout de NB_TURNS_TO_LIFE
