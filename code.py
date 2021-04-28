@@ -5,9 +5,9 @@ import time
 
 #constantes
 PROB_CONT = 0.2
-PROB_DEATH = 0.1
-NB_TURNS_TO_LIFE = 5 #une cellule va soit mourir, soit survivre NB_TURNS_TO_LIFE tours et devenir immunisée
-TAILLE_MONDE = (100, 100) #tuple qui donne la taille de notre monde
+PROB_DEATH = 1
+TOURS_MAX = 5 #une cellule va soit mourir, soit survivre TOURS_MAX tours et devenir immunisée
+TAILLE_MONDE = (10, 10) #tuple qui donne la taille de notre monde
 
 
 matrice = np.array([[0, 1, 1, 1, 0],
@@ -145,7 +145,7 @@ def voisinnage(monde, el): #matrice : List[List[int]], el : Tuple[int, int]
         
     return res
 
-def contamination(monde, el, prob_cont):
+def contamination(monde, el):
     """Preconditions : el appartient a monde et monde[el] == 2; prob_cont >= 0.0 and prob_cont <= 1.0
     Renvoie la liste des cellules contaminées par notre cellule el
     """
@@ -154,18 +154,18 @@ def contamination(monde, el, prob_cont):
     
     
     for i in voisinnage(monde, el):
-        if random.random()<=prob_cont:
+        if random.random()<=PROB_CONT:
             liste_cont.append(i)
 
     return liste_cont
 
-def death(monde, el, prob_death):
-    """Preconditions : el appartient a monde et monde[el] == 2; prob_death >= 0.0 and prob_death <= 1.0
-    Tue une cellule infectee avec une probabilite de prob_death"""
-    if random.random()<=prob_death:
-        return 1
+def death(monde, el):
+    """Preconditions : el appartient à monde et monde[el] == 2; prob_death >= 0.0 and prob_death <= 1.0
+    Tue une cellule infectée avec une probabilité de prob_death"""
+    if random.random()<=PROB_DEATH:
+        return True
     else:
-        return 0
+        return False
     
 def tour(monde):
     """  for i in range(x):
@@ -190,8 +190,11 @@ def tour(monde):
     for i in range(x):
         for j in range(y):
             if monde[i][j] == 2:
-                monde_update[i][j] = 2
-                for k in contamination(monde, (i, j), PROB_CONT):
+                if(death(monde, (i,j))):
+                    monde_update[i][j] = 0 
+                else:
+                    monde_update[i][j] = 2
+                for k in contamination(monde, (i, j)): # k : indice
                     if monde[k] == 1:
                         monde_update[k] = 2
     
@@ -204,19 +207,58 @@ def tour(monde):
     return monde_update
 
 
-for i in range(1, 21):    
-    plt.matshow(monde)
-    monde = tour(monde)
-    plt.title(i)
-    
-    print("Tour", i)
-    plt.pause(0.2)
-    
 
 
-plt.show()
+
+
+def main(monde):
     
-  
+    x = np.shape(monde)[0]
+    y = np.shape(monde)[1]
+    
+    
+    liste_infectes = []
+    for i in range(TOURS_MAX):
+            liste_infectes.append([])
+    
+    monde_update = monde
+    
+    
+    #vérifier qui s'est transformé chaque tour
+    
+    for i in range(1, 21):    
+        plt.matshow(monde)
+        monde_update = tour(monde)
+        
+        plt.title(i)
+        print("Tour", i)
+        
+        for j in range(x):
+            for k in range(y):
+                if(monde[j][k] == 1 and monde_update[j][k] == 2):
+                    if i < TOURS_MAX-1:
+                        liste_infectes[i-1].append((j, k))
+                    else:
+                        for el in liste_infectes[(i-1)%TOURS_MAX]:
+                            if monde_update[el] == 2:
+                                monde_update[el] = 3
+                            liste_infectes[(i-1)%TOURS_MAX].clear()
+        # i%TOURS_MAX
+        
+        monde = monde_update
+        
+        plt.pause(0.05)
+        
+    print(liste_infectes)
+    
+    plt.show()
+
+
+main(monde)
+
+# créer TOURS_MAX listes d'indices qui se sont transformés ce tour
+# au bout de TOURS_MAX tours après la création de la liste (compte à rebours), réécrire la liste
+# en immunisant les cellules encore vivantes 
                     
             
     
@@ -224,7 +266,7 @@ plt.show()
 
 
 
-# liste des contaminés a chaque tour -> pouvoir les immuniser au bout de NB_TURNS_TO_LIFE
+# liste des contaminés a chaque tour -> pouvoir les immuniser au bout de TOURS_MAX
 
 #Jeu de tests
 #cas 1
