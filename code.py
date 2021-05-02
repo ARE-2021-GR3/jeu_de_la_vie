@@ -168,12 +168,7 @@ def death(monde, el, prob_death):
         return 0
     
 def tour(monde):
-    """  for i in range(x):
-        for j in range(y):
-            if monde[i][j] == 2:
-                monde_update[i][j] == 2
-                for k in contamination(monde, (i, j), PROB_CONT):
-                    monde_update[k] = 2"""
+
     x = np.shape(monde)[0]
     y = np.shape(monde)[1]
     
