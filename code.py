@@ -154,7 +154,7 @@ def contamination(monde, el, prob_cont):
     
     
     for i in voisinnage(monde, el):
-        if random.random()>=prob_cont:
+        if random.random()<=prob_cont:
             liste_cont.append(i)
 
     return liste_cont
