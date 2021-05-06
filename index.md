@@ -14,7 +14,7 @@ Le nombre de mort est 650 au premier jour et est 1388 au vingtième jour.
 ![Figure_10](https://user-images.githubusercontent.com/80094693/117318709-f7244000-ae8a-11eb-8c9c-334cb46ebe3d.png)
 ![Figure_20](https://user-images.githubusercontent.com/80094693/117318721-f9869a00-ae8a-11eb-848a-43b681756253.png)
 
-(Violet = mort, bleu = vivant, turquoise = contaminé, jaune = immune)
+(Violet = mort, bleu = vivant, vert = contaminé, jaune = immune)
 
 Cas 2: (p = 0,1)
 
@@ -25,7 +25,7 @@ Le nombre de mort est 678 au premier jour et est 1684 au vingtième jour.
 ![Figure_100](https://user-images.githubusercontent.com/80094693/117319490-a2cd9000-ae8b-11eb-9420-af74093bb1a7.png)
 ![Figure_200](https://user-images.githubusercontent.com/80094693/117319499-a4975380-ae8b-11eb-8b62-ef1574d822e0.png)
 
-(Violet = mort, bleu = vivant, turquoise = contaminé, jaune = immune)
+(Violet = mort, bleu = vivant, vert = contaminé, jaune = immune)
 
 
 Notre code crée des mondes aléatoires avec quatre types de cellules et simule la propagation du virus au cours de temps à partir d'une probabilité de mourir, d'une probabilité d'être contaminé et de la taille de notre monde. Lors du développement du modèle et des tests, nous avons donné une random seed précis, afin de corriger le code et de pouvoir faire des tests dans de bonnes conditions. Avec plus de temps et de connaissances nous aurions pu plusieurs critères et obtenir des simulations plus complexes. 
