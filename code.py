@@ -250,11 +250,6 @@ plt.show()
 #- immuniser les contaminés après un certain temps
 #- optimiser la complexité du programme (trop demandant en terme de calculs)
 #- 
-    
-    
-
-
-
 # liste des contaminés a chaque tour -> pouvoir les immuniser au bout de NB_TURNS_TO_LIFE
 
 #Jeu de tests
