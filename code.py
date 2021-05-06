@@ -241,8 +241,7 @@ plt.show()
 #- mieux gérer l'aléatoire (gérer les proportions de chaque type)
 #- immuniser les contaminés après un certain temps
 #- optimiser la complexité du programme (trop demandant en terme de calculs)
-#- 
-# liste des contaminés a chaque tour -> pouvoir les immuniser au bout de NB_TURNS_TO_LIFE
+#- liste des contaminés a chaque tour -> pouvoir les immuniser au bout de NB_TURNS_TO_LIFE
 
 #Jeu de tests
 #cas 1
