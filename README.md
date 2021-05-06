@@ -1,33 +1,34 @@
 ## Jeu de l'Epidemie
-Notre projet a pour but de manipuler les principes de Jeu de la vie afin de faire une simulation de la propagation d‘une épidémie au cours du temps. Désormais, nous avons pu observer comment les conditions peuvent faire varier la vitesse de propagation d’un virus et ses effets sur la population lors de la pandémie de Covid-19. C’est pourquoi, avec les modifications sur les règles générales du jeu de la vie, nous souhaitons montrer la ressemblance entre ce jeu et la vie réelle. 
+Notre projet a pour but de modifier les règles du Jeu de la Vie afin de faire une simulation de la propagation d‘une épidémie au cours du temps. Dans la période actuelle, nous avons pu observer comment différents paramètres (nombre d'individus, nombre d'infectés à la base, taux de contagiosité, taux de létalité) peuvent faire varier la vitesse de propagation d’un virus et ses effets sur la population lors de la pandémie de Covid-19. C’est pourquoi, avec les modifications sur les règles générales du jeu de la vie, nous souhaitons montrer la ressemblance entre ce jeu et la vie réelle. 
 
-Premièrement nous voulons résumer le concept du Jeu de la vie créé par John Horton Conway. Ce simple jeu de plateau a deux différentes types de cellule : noir qui represent la morte et blanc qui represent la vie. Les règles sont simples, la cellule survit si elle a au plus trois cellules voisines mortes et meurt sinon. Une nouvelle cellule est née si une cellule morte a précisément trois voisins vivants.
+Premièrement nous voulons résumer le concept du Jeu de la vie créé par John Horton Conway. Ce simple jeu de plateau a deux différentes types de cellule : noire, qui represente une cellule morte et blanc, qui represent une cellule en vie. Les règles sont simples, une cellule vivante le reste si 2 ou 3 cellules vivantes lui sont voisines, et meurt sinon, de plus, une cellule morte vit si elle a exactement 3 cellules vivantes adjacentes.
 
-Nous voulons augmenter les types de cellules parce que normalement il y a plusieurs possibilités au cours d’une pandémie.Il n’y a pas seulement deux types mais il y a des cellules mortes, vivantes, contaminées, immunes etc.. L'automate cellulaire montre le changement des cellules à chaque tour et nous pouvons examiner différents résultats en changeant les critères d'évaluation. Par exemple, il y a deux virus et la probabilité de mourir après la contamination du premier est 0,05 mais le deuxième est plus fatal et la probabilité de mourir est 0,1. Dans ce cas-là, la deuxième fait diminuer la population plus rapidement. 
+Contrairement au Jeu de la Vie, notre modèle possède plus de deux types de cellule, jous en avons introduit 4 : morte, vivante, contaminée, immunisée. L'automate cellulaire montre le changement des cellules à chaque tour et nous pouvons examiner différents résultats en changeant les critères d'évaluation. Par exemple, si il y a deux virus virus en circulation et que la probabilité de mourir après la contamination par le premier est de 0,05 mais que celle du deuxième est de 0,1. Alors, le deuxième fait diminuer la population plus rapidement. 
 
-Cas ou la probabilité = 0,05.
+Cas 1: (p = 0,05)
 
 
-Le nombre de mort au premier jour est 650 et au vingtième jour est 1388. 
+Le nombre de mort est 650 au premier jour et est 1388 au vingtième jour. 
 
 ![fig1](https://user-images.githubusercontent.com/80094693/117318696-f4294f80-ae8a-11eb-9b11-c067e3685f46.png)
 ![Figure_10](https://user-images.githubusercontent.com/80094693/117318709-f7244000-ae8a-11eb-8c9c-334cb46ebe3d.png)
 ![Figure_20](https://user-images.githubusercontent.com/80094693/117318721-f9869a00-ae8a-11eb-848a-43b681756253.png)
 
-(Violet = mort, bleu = vivant, turquoise = contaminé, jaune = immune)
+(Violet = mort, bleu = vivant, vert = contaminé, jaune = immune)
 
-Cas ou la probabilité = 0,1.
+Cas 2: (p = 0,1)
 
 
-Le nombre de mort au premier jour est 678 et au vingtième jour est 1684.
+Le nombre de mort est 678 au premier jour et est 1684 au vingtième jour.
 
 ![Figure_11](https://user-images.githubusercontent.com/80094693/117319452-9a755500-ae8b-11eb-8379-99613656df35.png)
 ![Figure_100](https://user-images.githubusercontent.com/80094693/117319490-a2cd9000-ae8b-11eb-9420-af74093bb1a7.png)
 ![Figure_200](https://user-images.githubusercontent.com/80094693/117319499-a4975380-ae8b-11eb-8b62-ef1574d822e0.png)
 
-(Violet = mort, bleu = vivant, turquoise = contaminé, jaune = immune)
+(Violet = mort, bleu = vivant, vert = contaminé, jaune = immune)
 
-Ainsi, notre code crée des mondes aléatoires avec quatre types de cellules et simule la propagation du virus au cours de temps à partir de seuil de mortalité, de seuil de contamination, de taille du monde. Les resultats sont differents chaque fois car le monde est aléatoire et la position du premier contaminée, le nombre de cellules mortes et de cellules immunisées changent aléatoirement aussi. Avec le développement du code, on pourrait ajouter plusieurs critères et obtenir des simulations plus complexes. 
+
+Notre code crée des mondes aléatoires avec quatre types de cellules et simule la propagation du virus au cours de temps à partir d'une probabilité de mourir, d'une probabilité d'être contaminé et de la taille de notre monde. Lors du développement du modèle et des tests, nous avons donné une random seed précis, afin de corriger le code et de pouvoir faire des tests dans de bonnes conditions. Avec plus de temps et de connaissances nous aurions pu plusieurs critères et obtenir des simulations plus complexes. 
 
 
 
@@ -41,6 +42,7 @@ Brief outline of this game by John Horton Conway is that this board game has two
 As there are more types of people affected by an epidemic in real life, we would like to increase the number of different counters from two to four : counters that are dead, alive, contaminated and immunes. The cellular automaton displays the change of counters in every round and we can obtain different results by changing the conditions. For example, if there are two types of deadly viruses and the probability of the first one is 0,05 but the second one is even deadlier and the probability is 0,1. In this case, the second virus will decrease the population faster.
 
 Hence, our code creates random worlds with four different types of cells and simulates the propagation of a virus over time according to the threshold of death, to the threshold of contamination and to the size of the world. The results are different because the world is created randomly so the position of the first contaminated cell, the number of death cells and immune cells change randomly every time. With subtle improvements of the code, we can add more conditions and achieve complex simulations.
+
 
 
 ## Présentation de l'equipe :
