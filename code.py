@@ -203,14 +203,6 @@ def tour(monde):
     return monde_update
 
 
-for i in range(1, 21):    
-    plt.matshow(monde)
-    monde = tour(monde)
-    plt.title(i)
-    
-    print("Tour", i)
-    plt.pause(0.05)
-    
     max = 21
 for i in range(1, max):
     plt.matshow(monde)
