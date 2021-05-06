@@ -16,7 +16,7 @@ Le nombre de mort est 650 au premier jour et est 1388 au vingtième jour.
 
 (Violet = mort, bleu = vivant, turquoise = contaminé, jaune = immune)
 
-Cas ou la probabilité = 0,1.
+Cas 2: (p = 0,1)
 
 
 Le nombre de mort est 678 au premier jour et est 1684 au vingtième jour.
