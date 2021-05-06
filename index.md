@@ -41,6 +41,8 @@ Brief outline of this game by John Horton Conway is that this board game has two
 
 As there are more types of people affected by an epidemic in real life, we would like to increase the number of different counters from two to four : counters that are dead, alive, contaminated and immunes. The cellular automaton displays the change of counters in every round and we can obtain different results by changing the conditions. For example, if there are two types of deadly viruses and the probability of the first one is 0,05 but the second one is even deadlier and the probability is 0,1. In this case, the second virus will decrease the population faster.
 
+Hence, our code creates random worlds with four different types of cells and simulates the propagation of a virus over time according to the threshold of death, to the threshold of contamination and to the size of the world. The results are different because the world is created randomly so the position of the first contaminated cell, the number of death cells and immune cells change randomly every time. With subtle improvements of the code, we can add more conditions and achieve complex simulations.
+
 
 
 ## Présentation de l'equipe :
