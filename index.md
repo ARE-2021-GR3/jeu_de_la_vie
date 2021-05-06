@@ -3,11 +3,31 @@ Notre projet a pour but de manipuler les principes de Jeu de la vie afin de fair
 
 Premièrement nous voulons résumer le concept du Jeu de la vie créé par John Horton Conway. Ce simple jeu de plateau a deux différentes types de cellule : noir qui represent la morte et blanc qui represent la vie. Les règles sont simples, la cellule survit si elle a au plus trois cellules voisines mortes et meurt sinon. Une nouvelle cellule est née si une cellule morte a précisément trois voisins vivants.
 
-Nous voulons augmenter les types de cellules parce que normalement il y a plusieurs possibilités au cours d’une pandémie.Il n’y a pas seulement deux types mais il y a des cellules mortes, vivantes, contaminées, immunes etc.. L'automate cellulaire montre le changement des cellules à chaque tour et nous pouvons examiner différents résultats en changeant les critères d'évaluation. Par exemple, il y a deux virus et la probabilité de mourir après la contamination du premier est 0,05 mais le deuxième est plus fatal et la probabilité de mourir est 0,01. Dans ce cas-là, la deuxième fait diminuer la population plus rapidement. 
+Nous voulons augmenter les types de cellules parce que normalement il y a plusieurs possibilités au cours d’une pandémie.Il n’y a pas seulement deux types mais il y a des cellules mortes, vivantes, contaminées, immunes etc.. L'automate cellulaire montre le changement des cellules à chaque tour et nous pouvons examiner différents résultats en changeant les critères d'évaluation. Par exemple, il y a deux virus et la probabilité de mourir après la contamination du premier est 0,05 mais le deuxième est plus fatal et la probabilité de mourir est 0,1. Dans ce cas-là, la deuxième fait diminuer la population plus rapidement. 
+
+Cas ou la probabilité = 0,05.
+
+
+Le nombre de mort au premier jour est 650 et au vingtième jour est 1388. 
+
+![fig1](https://user-images.githubusercontent.com/80094693/117318696-f4294f80-ae8a-11eb-9b11-c067e3685f46.png)
+![Figure_10](https://user-images.githubusercontent.com/80094693/117318709-f7244000-ae8a-11eb-8c9c-334cb46ebe3d.png)
+![Figure_20](https://user-images.githubusercontent.com/80094693/117318721-f9869a00-ae8a-11eb-848a-43b681756253.png)
+(Bleu foncé = mort, bleu = vivant, turquoise = contaminé, jaune = immune)
+
+Cas ou la probabilité = 0,1.
+
+
+Le nombre de mort au premier jour est 678 et au vingtième jour est 1684.
+
+![Figure_11](https://user-images.githubusercontent.com/80094693/117319452-9a755500-ae8b-11eb-8379-99613656df35.png)
+![Figure_100](https://user-images.githubusercontent.com/80094693/117319490-a2cd9000-ae8b-11eb-9420-af74093bb1a7.png)
+![Figure_200](https://user-images.githubusercontent.com/80094693/117319499-a4975380-ae8b-11eb-8b62-ef1574d822e0.png)
+(Bleu foncé = mort, bleu = vivant, turquoise = contaminé, jaune = immune)
 
 Ainsi, notre code crée des mondes aléatoires avec quatre types de cellules et simule la propagation du virus au cours de temps à partir de seuil de mortalité, de seuil de contamination, de taille du monde. Les resultats sont differents chaque fois car le monde est aléatoire et la position du premier contaminée, le nombre de cellules mortes et de cellules immunisées changent aléatoirement aussi. Avec le développement du code, on pourrait ajouter plusieurs critères et obtenir des simulations plus complexes. 
 
-*** images d'Exemple a mettre
+
 
 
 ## Conway's Game of Life / Epidemic
