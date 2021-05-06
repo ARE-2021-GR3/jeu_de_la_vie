@@ -1,10 +1,12 @@
 ## Jeu de l'Epidemie
-Notre projet a pour but de manipuler les principes de Jeu de la vie afin de faire une semi-simulation de la propagation d‘une épidémie au cours du temps. Désormais, nous avons pu observer comment les conditions peuvent faire varier la vitesse de propagation d’un virus et ses effets sur la population lors de la pandémie de Covid-19. C’est pourquoi, avec les modifications sur les règles générales du jeu de la vie, nous pouvons montrer la ressemblance entre ce jeu et la vie réelle. 
+Notre projet a pour but de manipuler les principes de Jeu de la vie afin de faire une simulation de la propagation d‘une épidémie au cours du temps. Désormais, nous avons pu observer comment les conditions peuvent faire varier la vitesse de propagation d’un virus et ses effets sur la population lors de la pandémie de Covid-19. C’est pourquoi, avec les modifications sur les règles générales du jeu de la vie, nous pouvons montrer la ressemblance entre ce jeu et la vie réelle.
 
 Premièrement nous voulons résumer le concept du Jeu de la vie créé par John Horton Conway. Ce simple jeu de plateau a deux différentes types de cellule : noir qui represent la morte et blanc qui represent la vie. Les règles sont simples, la cellule survit si elle a au plus trois cellules voisines mortes et meurt si elle a au moins trois voisins morts. Une nouvelle cellule est née si une cellule morte a précisément trois voisins vivants.
 
-Nous voulons augmenter les types de cellules afin de faire ressembler aux possibilités au cours d’une pandémie. Par exemple les cellules mortes, vivantes, malades, soignées et immunes. Nous souhaitons aussi voir comment la distanciation sociale et le regroupement des immunes peuvent changer le déroulement de propagation. 
----- Ajouter le nombre de contamination par personne.
+Nous voulons augmenter les types de cellules parce que normalement il y a plusieurs possibilités au cours d’une pandémie.Il n’y a pas seulement deux types mais il y a des cellules mortes, vivantes, contaminées, immunes etc.. Notre automate cellulaire montre le changement des cellules à chaque tour et nous pouvons examiner différents résultats en changeant les critères d'évaluation. Par exemple, il y a deux virus et la probabilité de mourir après la contamination du premier est 0,05 mais le deuxième est plus fatal et la probabilité de mourir est 0,01. Dans ce cas-là, la population diminue plus rapidement. 
+
+Ainsi, notre code crée des mondes aléatoires avec quatre types de cellules et simule la propagation du virus au cours de temps à partir de seuil de mortalité, de seuil de contamination, de taille du monde. Les resultats different chaque fois car le monde est aléatoire et la position du premier contaminée, le nombre de cellules mortes et de cellules immunisées changent aléatoirement aussi. Avec le développement du code, on pourrait ajouter plusieurs critères et obtenir des simulations plus complexes. 
+
 
 
 ## Conway's Game of Life / Epidemic
