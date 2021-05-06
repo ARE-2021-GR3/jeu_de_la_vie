@@ -6,7 +6,7 @@ import time
 #constantes
 PROB_CONT = 0.2
 PROB_DEATH = 0.02
-NB_TURNS_TO_LIFE = 5 #une cellule va soit mourir, soit survivre NB_TURNS_TO_LIFE tours et devenir immunisée
+NB_TURNS_TO_LIFE = 5 #nombre de tours infectés avant d'être immunisé (non ajouté au code)
 TAILLE_MONDE = (100, 100) #tuple qui donne la taille de notre monde
 
 
@@ -203,8 +203,9 @@ def tour(monde):
     return monde_update
 
 
-    max = 21
-for i in range(1, max):
+
+max_tour = 20
+for i in range(1, max_tour + 1):
     plt.matshow(monde)
     monde = tour(monde)
     plt.title(i)
