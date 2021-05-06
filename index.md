@@ -3,15 +3,23 @@ Notre projet a pour but de manipuler les principes de Jeu de la vie afin de fair
 
 Premièrement nous voulons résumer le concept du Jeu de la vie créé par John Horton Conway. Ce simple jeu de plateau a deux différentes types de cellule : noir qui represent la morte et blanc qui represent la vie. Les règles sont simples, la cellule survit si elle a au plus trois cellules voisines mortes et meurt sinon. Une nouvelle cellule est née si une cellule morte a précisément trois voisins vivants.
 
-Nous voulons augmenter les types de cellules parce que normalement il y a plusieurs possibilités au cours d’une pandémie.Il n’y a pas seulement deux types mais il y a des cellules mortes, vivantes, contaminées, immunes etc.. Notre automate cellulaire montre le changement des cellules à chaque tour et nous pouvons examiner différents résultats en changeant les critères d'évaluation. Par exemple, il y a deux virus et la probabilité de mourir après la contamination du premier est 0,05 mais le deuxième est plus fatal et la probabilité de mourir est 0,01. Dans ce cas-là, la population diminue plus rapidement. 
+Nous voulons augmenter les types de cellules parce que normalement il y a plusieurs possibilités au cours d’une pandémie.Il n’y a pas seulement deux types mais il y a des cellules mortes, vivantes, contaminées, immunes etc.. L'automate cellulaire montre le changement des cellules à chaque tour et nous pouvons examiner différents résultats en changeant les critères d'évaluation. Par exemple, il y a deux virus et la probabilité de mourir après la contamination du premier est 0,05 mais le deuxième est plus fatal et la probabilité de mourir est 0,01. Dans ce cas-là, la deuxième fait diminuer la population plus rapidement. 
 
-Ainsi, notre code crée des mondes aléatoires avec quatre types de cellules et simule la propagation du virus au cours de temps à partir de seuil de mortalité, de seuil de contamination, de taille du monde. Les resultats different chaque fois car le monde est aléatoire et la position du premier contaminée, le nombre de cellules mortes et de cellules immunisées changent aléatoirement aussi. Avec le développement du code, on pourrait ajouter plusieurs critères et obtenir des simulations plus complexes. 
+Ainsi, notre code crée des mondes aléatoires avec quatre types de cellules et simule la propagation du virus au cours de temps à partir de seuil de mortalité, de seuil de contamination, de taille du monde. Les resultats sont differents chaque fois car le monde est aléatoire et la position du premier contaminée, le nombre de cellules mortes et de cellules immunisées changent aléatoirement aussi. Avec le développement du code, on pourrait ajouter plusieurs critères et obtenir des simulations plus complexes. 
 
 *** images d'Exemple a mettre
 
 
 ## Conway's Game of Life / Epidemic
-(english version) 
+
+Our project’s main focus is to manipulate the principles of Conway’s Game of Life in order to make a simulation of an epidemic over time. These days, we have the chance to observe the speed of contamination of Covid-19 and its effects on people. This is why, with our modifications, we would like to show the resemblance between this game and real life.
+
+Brief outline of this game by John Horton Conway is that this board game has two different colors of counters, black represents death and white represents life. The rules are simple, a counter survives if it has at the most three dead neighbors and dies if there is more.  A new  counter is born if a dead counter has precisely three neighbors that are alive.
+
+As there are more types of people affected by an epidemic in real life, we would like to increase the number of different counters from two to four : counters that are dead, alive, contaminated and immunes. The cellular automaton displays the change of counters in every round and we can obtain different results by changing the conditions. For example, if there are two types of deadly viruses and the probability of the first one is 0,05 but the second one is even deadlier and the probability is 0,1. In this case, the second virus will decrease the population faster.
+
+Hence, our code creates random worlds with four different types of cells and simulates the propagation of a virus over time according to the threshold of death, to the threshold of contamination and to the size of the world. The results are different because the world is created randomly so the position of the first contaminated cell, the number of death cells and immune cells change randomly every time. With subtle improvements of the code, we can add more conditions and achieve complex simulations.
+
 
 ## Présentation de l'equipe :
 
