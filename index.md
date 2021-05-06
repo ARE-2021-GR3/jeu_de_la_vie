@@ -49,6 +49,9 @@ Faire varier les conditions afin d'observer la propagation d'une epidémie au co
 -Regroupement des immunes 
 
 
+## Lien vers le page du code :
+
+<a href= "https://github.com/ARE-2021-GR3/jeu_de_la_vie/blob/main/code.py" > C'est ici notre code ! </a>
 
 
 ## Lien vers page de blog :
@@ -56,9 +59,7 @@ Nous avons crée un blog afin de documenter l'avancement du projet.
 
 <a href= "https://github.com/ARE-2021-GR3/jeu_de_la_vie/blob/main/blog.md">   C'est ici notre blog ! </a>
 
-## Lien vers le page du code :
 
-<a href= "https://github.com/ARE-2021-GR3/jeu_de_la_vie/blob/main/code.py" > C'est ici notre code ! </a>
 
 ## Bibliographie :
 
