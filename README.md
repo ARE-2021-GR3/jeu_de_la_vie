@@ -37,11 +37,13 @@ Faire varier les conditions afin d'observer la propagation d'une epidémie au co
 
 -Le nombre de contamination par personne
 
+-Seuil de contamination
+
+-Seuil de mort après contamination
+
 -Densité de population
 
--Regroupement des immunes 
-
--Distanciation sociale
+-Regroupement des immunes
 
 
 ## Lien vers page de blog :
