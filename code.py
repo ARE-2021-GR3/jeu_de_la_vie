@@ -185,10 +185,14 @@ def tour(monde):
     for i in range(x):
         for j in range(y):
             if monde[i][j] == 2:
-                monde_update[i][j] = 2
                 for k in contamination(monde, (i, j), PROB_CONT):
                     if monde[k] == 1:
                         monde_update[k] = 2
+
+                if death(monde, (i, j), PROB_DEATH):
+                  monde_update[i][j] = 0
+                else :
+                  monde_update[i][j] = 2
     
     # troisième parcours pour placer les cellules vivantes
     for i in range(x):
@@ -207,6 +211,35 @@ for i in range(1, 21):
     print("Tour", i)
     plt.pause(0.05)
     
+    max = 21
+for i in range(1, max):
+    plt.matshow(monde)
+    monde = tour(monde)
+    plt.title(i)
+  
+    print("Tour", i)
+    plt.pause(0.05)
+    if (i==1 or i==max-1):
+      mort = 0
+      vivant = 0
+      contamine = 0
+      immunise = 0
+      x = np.shape(monde)[0]
+      y = np.shape(monde)[1]
+      for j in range (x):
+        for k in range (y):
+          if (monde[j][k]==0):
+            mort+=1
+          if (monde[j][k]==1):
+            vivant+=1
+          if (monde[j][k]==2):
+            contamine+=1
+          if (monde[j][k]==3):
+            immunise+=1
+      print(f"Mort = {mort}")
+      print(f"Vivant = {vivant}")
+      print(f"Contamine = {contamine}")
+      print(f"Immunise = {immunise}")
 
 
 plt.show()
