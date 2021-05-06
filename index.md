@@ -8,7 +8,7 @@ Contrairement au Jeu de la Vie, notre modèle possède plus de deux types de cel
 Cas 1: (p = 0,05)
 
 
-Le nombre de mort au premier jour est 650 et au vingtième jour est 1388. 
+Le nombre de mort est 650 au premier jour et est 1388 au vingtième jour. 
 
 ![fig1](https://user-images.githubusercontent.com/80094693/117318696-f4294f80-ae8a-11eb-9b11-c067e3685f46.png)
 ![Figure_10](https://user-images.githubusercontent.com/80094693/117318709-f7244000-ae8a-11eb-8c9c-334cb46ebe3d.png)
@@ -19,7 +19,7 @@ Le nombre de mort au premier jour est 650 et au vingtième jour est 1388.
 Cas ou la probabilité = 0,1.
 
 
-Le nombre de mort au premier jour est 678 et au vingtième jour est 1684.
+Le nombre de mort est 678 au premier jour et est 1684 au vingtième jour.
 
 ![Figure_11](https://user-images.githubusercontent.com/80094693/117319452-9a755500-ae8b-11eb-8379-99613656df35.png)
 ![Figure_100](https://user-images.githubusercontent.com/80094693/117319490-a2cd9000-ae8b-11eb-9420-af74093bb1a7.png)
