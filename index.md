@@ -51,4 +51,21 @@ Nous avons crée un blog afin de documenter l'avancement du projet.
 
 ## Bibliographie :
 
+Caballero, Lorena, Robert Hodge, and Sergio Hernandez. “Conway’s ‘Game of Life’ and the Epigenetic Principle.” Frontiers in Cellular and Infection Microbiology 6 (June 14, 2016). https://doi.org/10.3389/fcimb.2016.00057.
+
+“Conway’s Game of Life.” In Wikipedia, March 25, 2021. https://en.wikipedia.org/w/index.php?title=Conway%27s_Game_of_Life&oldid=1014218578.
+
+“La Propagation d’une Épidémie.” Accessed March 27, 2021. http://www.tangentex.com/ACEpidemie.htm.
+Li, Ruiqi, Peter Richmond, and Bertrand Roehner. “Effect of Population Density on Epidemics,” 2018.
+
+“Mathematical Games - The Fantastic Combinations of John Conway’s New Solitaire Game ‘Life’ - M. Gardner - 1970,” 1970, 6.
+
+Oxman, Gadi, Shlomo Weiss, and Yair Be’ery. “Computational Methods for Conway’s Game of Life Cellular Automaton.” Journal of Computational Science 5, no. 1 (2014): 24–31. https://doi.org/10.1016/j.jocs.2013.07.005.
+
+SUN, GUI-QUAN, ZHEN JIN, and LI LI. “EMERGENT TURING PATTERN IN EPIDEMIC SPREADING USING CELLULAR AUTOMATON.” International Journal of Modern Physics B, April 7, 2012. https://doi.org/10.1142/S0217979211059401.
+
+Zhang, Deguo. “Un automate cellulaire de l’espace réel pour l’étude des populations de dunes.” Thèse de doctorat, Institut de physique du globe, 2011.
+
+
+
 
