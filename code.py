@@ -5,7 +5,7 @@ import time
 
 #constantes
 PROB_CONT = 0.2
-PROB_DEATH = 0.1
+PROB_DEATH = 0.02
 NB_TURNS_TO_LIFE = 5 #une cellule va soit mourir, soit survivre NB_TURNS_TO_LIFE tours et devenir immunisée
 TAILLE_MONDE = (100, 100) #tuple qui donne la taille de notre monde
 
