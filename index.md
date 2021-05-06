@@ -1,4 +1,4 @@
-## Jeu_de_la_vie
+## Jeu de l'Epidemie
 Notre projet a pour but de manipuler les principes de Jeu de la vie afin de faire une semi-simulation de la propagation d‘une épidémie au cours du temps. Désormais, nous avons pu observer comment les conditions peuvent faire varier la vitesse de propagation d’un virus et ses effets sur la population lors de la pandémie de Covid-19. C’est pourquoi, avec les modifications sur les règles générales du jeu de la vie, nous pouvons montrer la ressemblance entre ce jeu et la vie réelle. 
 
 Premièrement nous voulons résumer le concept du Jeu de la vie créé par John Horton Conway. Ce simple jeu de plateau a deux différentes types de cellule : noir qui represent la morte et blanc qui represent la vie. Les règles sont simples, la cellule survit si elle a au plus trois cellules voisines mortes et meurt si elle a au moins trois voisins morts. Une nouvelle cellule est née si une cellule morte a précisément trois voisins vivants.
@@ -7,7 +7,7 @@ Nous voulons augmenter les types de cellules afin de faire ressembler aux possib
 ---- Ajouter le nombre de contamination par personne.
 
 
-## Conway's Game of Life 
+## Conway's Game of Life / Epidemic
 (english version) 
 
 ## Présentation de l'equipe :
