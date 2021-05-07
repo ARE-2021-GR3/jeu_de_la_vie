@@ -212,7 +212,7 @@ for i in range(1, max_tour + 1):
   
     print("Tour", i)
     plt.pause(0.05)
-    if (i==1 or i==max-1):
+    if (i==1 or i==max):
       mort = 0
       vivant = 0
       contamine = 0
